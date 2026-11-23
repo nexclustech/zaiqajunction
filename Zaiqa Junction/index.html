@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaiqa Junction | Where Every Bite Tells a Story</title>
+    <meta name="description" content="Zaiqa Junction — Experience the perfect blend of taste, tradition & togetherness. Authentic Pakistani cuisine in a premium setting.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">
+                <span class="preloader-script">Zaiqa</span>
+                <span class="preloader-main">JUNCTION</span>
+            </div>
+            <div class="preloader-ornament">
+                <span class="ornament-line"></span>
+                <i data-lucide="utensils-crossed"></i>
+                <span class="ornament-line"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i data-lucide="utensils-crossed"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-script">Zaiqa</span>
+                    <span class="logo-main">JUNCTION</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#reservations" class="nav-link">Reservations</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#reservations" class="btn-nav">Book a Table</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <button class="sidebar-close" id="sidebarClose" aria-label="Close menu">
+            <i data-lucide="x"></i>
+        </button>
+
+        <div class="sidebar-content">
+            <div class="sidebar-logo">
+                <i data-lucide="utensils-crossed"></i>
+                <div>
+                    <span class="sidebar-script">Zaiqa</span>
+                    <span class="sidebar-main">JUNCTION</span>
+                </div>
+            </div>
+
+            <ul class="sidebar-nav">
+                <li><a href="#home" class="sidebar-link">Home</a></li>
+                <li><a href="#menu" class="sidebar-link">Menu</a></li>
+                <li><a href="#about" class="sidebar-link">About</a></li>
+                <li><a href="#gallery" class="sidebar-link">Gallery</a></li>
+                <li><a href="#reservations" class="sidebar-link">Reservations</a></li>
+                <li><a href="#contact" class="sidebar-link">Contact</a></li>
+            </ul>
+
+            <a href="#reservations" class="sidebar-cta">
+                <i data-lucide="calendar"></i>
+                <span>Reserve a Table</span>
+            </a>
+
+            <div class="sidebar-contact">
+                <h4>Visit Us</h4>
+                <a href="tel:+923001234567"><i data-lucide="phone"></i> +92 300 1234567</a>
+                <a href="mailto:hello@zaiqajunction.pk"><i data-lucide="mail"></i> hello@zaiqajunction.pk</a>
+                <a href="#"><i data-lucide="map-pin"></i> MM Alam Road, Gulberg, Lahore</a>
+            </div>
+
+            <div class="sidebar-social">
+                <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i data-lucide="music-2"></i></a>
+                <a href="#" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+            </div>
+
+            <div class="sidebar-hours">
+                <h4>Opening Hours</h4>
+                <p>Mon - Sun: 12:00 PM - 1:00 AM</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-image"></div>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Floating Decorative Elements -->
+        <div class="floating-elements">
+            <div class="float-item float-1">🌶️</div>
+            <div class="float-item float-2">🍃</div>
+            <div class="float-item float-3">✨</div>
+            <div class="float-item float-4">🍽️</div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-tag">
+                <span class="tag-line"></span>
+                <span>Authentic Pakistani Cuisine</span>
+                <span class="tag-line"></span>
+            </div>
+            <h1 class="hero-title">
+                Where Every Bite<br>
+                Tells a <span class="script-text">Story</span>
+            </h1>
+            <p class="hero-subtitle">
+                Experience the perfect blend of taste, tradition & togetherness. From sizzling karahi to fragrant biryani, every dish is crafted with love and heritage.
+            </p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary magnetic">
+                    <span>Explore Menu</span>
+                    <i data-lucide="arrow-right"></i>
+                </a>
+                <a href="#reservations" class="btn btn-outline magnetic">
+                    <i data-lucide="calendar"></i>
+                    <span>Reserve a Table</span>
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-num">15+</span>
+                    <span class="stat-label">Years of Taste</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-num">50+</span>
+                    <span class="stat-label">Signature Dishes</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-num">10K+</span>
+                    <span class="stat-label">Happy Guests</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images reveal">
+                    <div class="about-img-main">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800&q=80" alt="Traditional Pakistani Biryani">
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600&q=80" alt="Chef preparing food">
+                    </div>
+                    <div class="about-badge">
+                        <span class="badge-year">Since</span>
+                        <span class="badge-num">2010</span>
+                        <span class="badge-text">Serving Love</span>
+                    </div>
+                </div>
+
+                <div class="about-content reveal">
+                    <span class="section-tag">Our Story</span>
+                    <h2 class="section-title">A Taste of Pakistan,<br>A Legacy of <span class="script-text">Flavour</span></h2>
+                    <p class="about-lead">
+                        At Zaiqa Junction, we don't just serve food — we serve memories. Every dish is a tribute to the rich culinary heritage of Pakistan.
+                    </p>
+                    <p>
+                        From the aromatic streets of Lahore to the royal kitchens of Mughal era, our recipes carry centuries of tradition. Our master chefs blend authentic spices, fresh ingredients, and time-honored techniques to create meals that warm the soul and bring families together.
+                    </p>
+                    <p>
+                        Whether it's a family dinner, a celebration, or a quiet meal with friends, Zaiqa Junction is where stories are shared over sizzling karahi and fragrant biryani.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i data-lucide="flame"></i>
+                            <div>
+                                <h4>Wood-Fired Cooking</h4>
+                                <p>Traditional tandoor and charcoal grilling</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i data-lucide="leaf"></i>
+                            <div>
+                                <h4>Fresh Ingredients</h4>
+                                <p>Farm-fresh produce sourced daily</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#menu" class="btn btn-primary magnetic">
+                        <span>Discover Our Menu</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Our Menu</span>
+                <h2 class="section-title">Crafted with <span class="script-text">Passion</span></h2>
+                <p class="section-subtitle">Explore our diverse menu featuring authentic Pakistani flavours, from sizzling BBQ to royal biryanis</p>
+            </div>
+
+            <!-- Menu Filters -->
+            <div class="menu-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="starters">Starters</button>
+                <button class="filter-btn" data-filter="main">Main Course</button>
+                <button class="filter-btn" data-filter="bbq">BBQ & Grill</button>
+                <button class="filter-btn" data-filter="traditional">Traditional</button>
+                <button class="filter-btn" data-filter="fastfood">Fast Food</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Starters -->
+                <div class="menu-card reveal" data-category="starters">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1625938145744-e380515399b7?w=600&q=80" alt="Samosa">
+                        <span class="menu-badge">Popular</span>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Chicken Samosa</h3>
+                            <span class="menu-price">PKR 350</span>
+                        </div>
+                        <p>Crispy golden pastries filled with spiced chicken, served with mint chutney.</p>
+                        <div class="menu-tags">
+                            <span>6 pieces</span>
+                            <span>Spicy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal" data-category="starters">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=600&q=80" alt="Pakora">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Mixed Pakora Platter</h3>
+                            <span class="menu-price">PKR 450</span>
+                        </div>
+                        <p>Assorted vegetable fritters with onion, potato, and spinach, fried to perfection.</p>
+                        <div class="menu-tags">
+                            <span>Vegetarian</span>
+                            <span>Crispy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="menu-card reveal" data-category="main">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Chicken Karahi">
+                        <span class="menu-badge featured">Chef's Pick</span>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Chicken Karahi</h3>
+                            <span class="menu-price">PKR 1,450</span>
+                        </div>
+                        <p>Tender chicken cooked in a wok with tomatoes, green chilies, and fresh ginger.</p>
+                        <div class="menu-tags">
+                            <span>Half kg</span>
+                            <span>Spicy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal" data-category="main">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80" alt="Mutton Handi">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Mutton Handi</h3>
+                            <span class="menu-price">PKR 2,200</span>
+                        </div>
+                        <p>Slow-cooked mutton in a clay pot with aromatic spices and yogurt gravy.</p>
+                        <div class="menu-tags">
+                            <span>Half kg</span>
+                            <span>Rich</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BBQ -->
+                <div class="menu-card reveal" data-category="bbq">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" alt="Seekh Kebab">
+                        <span class="menu-badge">Bestseller</span>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Seekh Kebab</h3>
+                            <span class="menu-price">PKR 850</span>
+                        </div>
+                        <p>Minced meat skewers grilled over charcoal with traditional spices.</p>
+                        <div class="menu-tags">
+                            <span>4 pieces</span>
+                            <span>Charcoal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal" data-category="bbq">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=600&q=80" alt="Chicken Tikka">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Chicken Tikka</h3>
+                            <span class="menu-price">PKR 750</span>
+                        </div>
+                        <p>Marinated chicken pieces grilled in tandoor with smoky flavor.</p>
+                        <div class="menu-tags">
+                            <span>Half kg</span>
+                            <span>Tandoor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Traditional -->
+                <div class="menu-card reveal" data-category="traditional">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Biryani">
+                        <span class="menu-badge featured">Signature</span>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Sindhi Biryani</h3>
+                            <span class="menu-price">PKR 650</span>
+                        </div>
+                        <p>Fragrant basmati rice layered with spiced meat, saffron, and fried onions.</p>
+                        <div class="menu-tags">
+                            <span>Full plate</span>
+                            <span>Aromatic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal" data-category="traditional">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600&q=80" alt="Nihari">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Beef Nihari</h3>
+                            <span class="menu-price">PKR 950</span>
+                        </div>
+                        <p>Slow-cooked beef shank stew with rich gravy, served with naan.</p>
+                        <div class="menu-tags">
+                            <span>Full plate</span>
+                            <span>Traditional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fast Food -->
+                <div class="menu-card reveal" data-category="fastfood">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Zinger Burger">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Zinger Burger</h3>
+                            <span class="menu-price">PKR 550</span>
+                        </div>
+                        <p>Crispy fried chicken fillet with fresh lettuce, mayo, and special sauce.</p>
+                        <div class="menu-tags">
+                            <span>Single</span>
+                            <span>Crispy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal" data-category="fastfood">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80" alt="Pizza">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Chicken Fajita Pizza</h3>
+                            <span class="menu-price">PKR 1,200</span>
+                        </div>
+                        <p>Hand-tossed pizza topped with fajita chicken, peppers, and mozzarella.</p>
+                        <div class="menu-tags">
+                            <span>Large</span>
+                            <span>Cheesy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-card reveal" data-category="desserts">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80" alt="Gulab Jamun">
+                        <span class="menu-badge">Sweet</span>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Gulab Jamun</h3>
+                            <span class="menu-price">PKR 350</span>
+                        </div>
+                        <p>Soft milk dumplings soaked in warm rose-cardamom syrup.</p>
+                        <div class="menu-tags">
+                            <span>4 pieces</span>
+                            <span>Warm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card reveal" data-category="desserts">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80" alt="Kheer">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Rice Kheer</h3>
+                            <span class="menu-price">PKR 280</span>
+                        </div>
+                        <p>Creamy rice pudding infused with cardamom, topped with nuts.</p>
+                        <div class="menu-tags">
+                            <span>Bowl</span>
+                            <span>Creamy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-cta reveal">
+                <a href="#" class="btn btn-primary magnetic">
+                    <span>View Full Menu</span>
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef's Special -->
+    <section class="section chef-special">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Chef's Special</span>
+                <h2 class="section-title">Signature <span class="script-text">Creations</span></h2>
+                <p class="section-subtitle">Handcrafted dishes that define the Zaiqa Junction experience</p>
+            </div>
+
+            <div class="chef-grid">
+                <div class="chef-card reveal">
+                    <div class="chef-image">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=800&q=80" alt="Royal Biryani">
+                        <div class="chef-overlay">
+                            <span class="chef-number">01</span>
+                        </div>
+                    </div>
+                    <div class="chef-content">
+                        <span class="chef-tag">Signature Dish</span>
+                        <h3>Royal Mughlai Biryani</h3>
+                        <p>A regal preparation featuring tender mutton, saffron-infused basmati rice, and a secret blend of 21 spices, slow-cooked in the traditional dum style.</p>
+                        <div class="chef-footer">
+                            <span class="chef-price">PKR 1,850</span>
+                            <a href="#reservations" class="chef-link">Order Now <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chef-card reveal">
+                    <div class="chef-image">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80" alt="Tandoori Platter">
+                        <div class="chef-overlay">
+                            <span class="chef-number">02</span>
+                        </div>
+                    </div>
+                    <div class="chef-content">
+                        <span class="chef-tag">Chef's Recommendation</span>
+                        <h3>Tandoori Mixed Grill</h3>
+                        <p>A magnificent platter of seekh kebab, chicken tikka, malai boti, and lamb chops, all grilled to perfection in our clay tandoor.</p>
+                        <div class="chef-footer">
+                            <span class="chef-price">PKR 3,200</span>
+                            <a href="#reservations" class="chef-link">Order Now <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chef-card reveal">
+                    <div class="chef-image">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&q=80" alt="Nihari Special">
+                        <div class="chef-overlay">
+                            <span class="chef-number">03</span>
+                        </div>
+                    </div>
+                    <div class="chef-content">
+                        <span class="chef-tag">Weekend Special</span>
+                        <h3>Old Lahore Nihari</h3>
+                        <p>Our legendary beef nihari, simmered overnight with bone marrow, finished with fresh ginger, green chilies, and a drizzle of nihari oil.</p>
+                        <div class="chef-footer">
+                            <span class="chef-price">PKR 1,250</span>
+                            <a href="#reservations" class="chef-link">Order Now <i data-lucide="arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section why-us">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Why Zaiqa Junction</span>
+                <h2 class="section-title">The <span class="script-text">Difference</span></h2>
+                <p class="section-subtitle">What makes every meal at Zaiqa Junction unforgettable</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <i data-lucide="leaf"></i>
+                    </div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We source the finest farm-fresh produce daily. No shortcuts, no compromises — only pure, natural ingredients.</p>
+                </div>
+
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <i data-lucide="chef-hat"></i>
+                    </div>
+                    <h3>Expert Chefs</h3>
+                    <p>Our master chefs bring decades of experience from Pakistan's most celebrated kitchens and royal households.</p>
+                </div>
+
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <i data-lucide="flame"></i>
+                    </div>
+                    <h3>Authentic Flavours</h3>
+                    <p>Traditional recipes passed down through generations, prepared with the same love and technique as our ancestors.</p>
+                </div>
+
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <i data-lucide="heart-handshake"></i>
+                    </div>
+                    <h3>Excellent Hospitality</h3>
+                    <p>Pakistani mehmaan-nawazi at its finest. Every guest is treated like family, from the first welcome to the last bite.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Our Gallery</span>
+                <h2 class="section-title">A Feast for the <span class="script-text">Eyes</span></h2>
+                <p class="section-subtitle">Glimpses of our food, ambiance, and the joy we create every day</p>
+            </div>
+
+            <div class="gallery-grid reveal">
+                <div class="gallery-item gallery-tall" data-src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" alt="Biryani">
+                    <div class="gallery-overlay">
+                        <i data-lucide="zoom-in"></i>
+                        <span>View</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="BBQ">
+                    <div class="gallery-overlay">
+                        <i data-lucide="zoom-in"></i>
+                        <span>View</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <i data-lucide="zoom-in"></i>
+                        <span>View</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-wide" data-src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" alt="Kebabs">
+                    <div class="gallery-overlay">
+                        <i data-lucide="zoom-in"></i>
+                        <span>View</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80" alt="Desserts">
+                    <div class="gallery-overlay">
+                        <i data-lucide="zoom-in"></i>
+                        <span>View</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=600&q=80" alt="Pakora">
+                    <div class="gallery-overlay">
+                        <i data-lucide="zoom-in"></i>
+                        <span>View</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-tall" data-src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Dining Area">
+                    <div class="gallery-overlay">
+                        <i data-lucide="zoom-in"></i>
+                        <span>View</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=1200&q=80">
+                    <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600&q=80" alt="Chef at Work">
+                    <div class="gallery-overlay">
+                        <i data-lucide="zoom-in"></i>
+                        <span>View</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">
+            <i data-lucide="x"></i>
+        </button>
+        <button class="lightbox-prev" aria-label="Previous image">
+            <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="lightbox-next" aria-label="Next image">
+            <i data-lucide="chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery image" id="lightboxImage">
+        </div>
+    </div>
+
+    <!-- Reservations -->
+    <section class="section reservations" id="reservations">
+        <div class="container">
+            <div class="reservations-grid">
+                <div class="reservations-info reveal">
+                    <span class="section-tag">Book a Table</span>
+                    <h2 class="section-title">Reserve Your <span class="script-text">Experience</span></h2>
+                    <p>Join us for an unforgettable dining experience. Whether it's a family gathering, a romantic dinner, or a celebration with friends, we'll make it special.</p>
+
+                    <div class="reservation-features">
+                        <div class="res-feature">
+                            <i data-lucide="users"></i>
+                            <div>
+                                <h4>Private Dining</h4>
+                                <p>Exclusive rooms for intimate gatherings</p>
+                            </div>
+                        </div>
+                        <div class="res-feature">
+                            <i data-lucide="music"></i>
+                            <div>
+                                <h4>Live Music</h4>
+                                <p>Qawwali nights every weekend</p>
+                            </div>
+                        </div>
+                        <div class="res-feature">
+                            <i data-lucide="cake"></i>
+                            <div>
+                                <h4>Celebrations</h4>
+                                <p>Birthday & anniversary packages</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reservation-contact">
+                        <h4>Prefer to call?</h4>
+                        <a href="tel:+923001234567" class="res-phone">
+                            <i data-lucide="phone"></i>
+                            +92 300 1234567
+                        </a>
+                    </div>
+                </div>
+
+                <div class="reservations-form-wrapper reveal">
+                    <form class="reservations-form" id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="resName">Full Name</label>
+                                <input type="text" id="resName" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="resPhone">Phone Number</label>
+                                <input type="tel" id="resPhone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="resEmail">Email Address</label>
+                            <input type="email" id="resEmail" name="email" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="resDate">Date</label>
+                                <input type="date" id="resDate" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="resTime">Time</label>
+                                <select id="resTime" name="time" required>
+                                    <option value="">Select time</option>
+                                    <option>12:00 PM</option>
+                                    <option>1:00 PM</option>
+                                    <option>2:00 PM</option>
+                                    <option>6:00 PM</option>
+                                    <option>7:00 PM</option>
+                                    <option>8:00 PM</option>
+                                    <option>9:00 PM</option>
+                                    <option>10:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="resGuests">Number of Guests</label>
+                            <select id="resGuests" name="guests" required>
+                                <option value="">Select guests</option>
+                                <option>1 - 2 Guests</option>
+                                <option>3 - 4 Guests</option>
+                                <option>5 - 6 Guests</option>
+                                <option>7 - 10 Guests</option>
+                                <option>10+ Guests (Private Dining)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="resNotes">Special Requests (Optional)</label>
+                            <textarea id="resNotes" name="notes" rows="3" placeholder="Allergies, celebrations, seating preferences..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary magnetic submit-btn">
+                            <i data-lucide="calendar-check"></i>
+                            <span>Confirm Reservation</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Guest Reviews</span>
+                <h2 class="section-title">Words from Our <span class="script-text">Guests</span></h2>
+                <p class="section-subtitle">The love and appreciation from our valued guests keeps us inspired</p>
+            </div>
+
+            <div class="testimonials-slider reveal">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i data-lucide="quote"></i>
+                        </div>
+                        <div class="testimonial-stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <p class="testimonial-text">"The biryani at Zaiqa Junction is absolutely divine! It reminds me of my grandmother's cooking. The ambiance, the service, the food — everything is perfect. This is our family's go-to place for every celebration."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AK</div>
+                            <div class="author-info">
+                                <h4>Ayesha Khan</h4>
+                                <span>Food Blogger, Lahore</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i data-lucide="quote"></i>
+                        </div>
+                        <div class="testimonial-stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <p class="testimonial-text">"Best karahi in town, hands down! The chicken karahi here has the perfect balance of spices. The staff is incredibly welcoming and the portion sizes are generous. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MR</div>
+                            <div class="author-info">
+                                <h4>Muhammad Raza</h4>
+                                <span>Regular Customer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i data-lucide="quote"></i>
+                        </div>
+                        <div class="testimonial-stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <p class="testimonial-text">"We celebrated our anniversary here and it was magical. The private dining room, the qawwali night, and the special dessert they prepared — everything was thoughtfully arranged. Thank you Zaiqa Junction!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SF</div>
+                            <div class="author-info">
+                                <h4>Sara & Fahad</h4>
+                                <span>Anniversary Celebration</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i data-lucide="quote"></i>
+                        </div>
+                        <div class="testimonial-stars">
+                            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                        </div>
+                        <p class="testimonial-text">"As someone who travels frequently for work, I've eaten at many restaurants. Zaiqa Junction stands out for its authenticity and consistency. The nihari here is the best I've had outside of Old Delhi."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">IA</div>
+                            <div class="author-info">
+                                <h4>Imran Ali</h4>
+                                <span>Business Traveler</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-controls">
+                    <button class="testimonial-btn prev" id="testimonialPrev" aria-label="Previous">
+                        <i data-lucide="arrow-left"></i>
+                    </button>
+                    <div class="testimonial-dots" id="testimonialDots"></div>
+                    <button class="testimonial-btn next" id="testimonialNext" aria-label="Next">
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Visit <span class="script-text">Zaiqa Junction</span></h2>
+                    <p>We'd love to welcome you. Drop by for a meal, give us a call, or send us a message — we're always here to serve you.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <h4>Our Location</h4>
+                                <span>42-C, MM Alam Road, Gulberg III<br>Lahore, Pakistan</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <a href="tel:+923001234567">+92 300 1234567</a>
+                                <a href="tel:+924235123456">+92 42 35123456</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <a href="mailto:hello@zaiqajunction.pk">hello@zaiqajunction.pk</a>
+                                <a href="mailto:reservations@zaiqajunction.pk">reservations@zaiqajunction.pk</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon"><i data-lucide="clock"></i></div>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <span>Monday - Sunday</span>
+                                <span class="hours-time">12:00 PM - 1:00 AM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/923001234567" target="_blank" class="whatsapp-btn magnetic">
+                        <i data-lucide="message-circle"></i>
+                        <span>Chat on WhatsApp</span>
+                    </a>
+                </div>
+
+                <div class="contact-map reveal">
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <i data-lucide="map-pin"></i>
+                            <h3>Find Us Here</h3>
+                            <p>42-C, MM Alam Road<br>Gulberg III, Lahore</p>
+                            <a href="https://maps.google.com" target="_blank" class="map-link">
+                                <i data-lucide="navigation"></i>
+                                <span>Open in Google Maps</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i data-lucide="utensils-crossed"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-script">Zaiqa</span>
+                            <span class="logo-main">JUNCTION</span>
+                        </div>
+                    </a>
+                    <p>Where every bite tells a story. Authentic Pakistani cuisine crafted with love, tradition, and the finest ingredients since 2010.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i data-lucide="music-2"></i></a>
+                        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reservations">Reservations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Our Menu</h4>
+                    <ul>
+                        <li><a href="#menu">Starters</a></li>
+                        <li><a href="#menu">Main Course</a></li>
+                        <li><a href="#menu">BBQ & Grill</a></li>
+                        <li><a href="#menu">Traditional</a></li>
+                        <li><a href="#menu">Fast Food</a></li>
+                        <li><a href="#menu">Desserts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i data-lucide="map-pin"></i> 42-C, MM Alam Road, Gulberg III, Lahore</li>
+                        <li><i data-lucide="phone"></i> +92 300 1234567</li>
+                        <li><i data-lucide="mail"></i> hello@zaiqajunction.pk</li>
+                        <li><i data-lucide="clock"></i> Daily: 12:00 PM - 1:00 AM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zaiqa Junction. All rights reserved. designed and developed by <a href="https://nexclustech.netlify.app"type="_blank">Nexclus Tech</a></p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
